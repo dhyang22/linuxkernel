@@ -1,0 +1,2 @@
+atherv@atherv-Inspiron-3268:~/Documents/gitrepo/linuxkernel$ setfattr -n user.x -v "The past is dead". tfile
+atherv@atherv-Inspiron-3268:~/Documents/gitrepo/linuxkernel$ getfattr -n user.x tfile
