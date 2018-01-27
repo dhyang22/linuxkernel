@@ -1,0 +1,21 @@
+Configuring ctags and cscope
+
+Generating cscope.files
+-----------------------
+find . -name "*.c" -o -name "*.cpp" -o -name "*.h" -o -name "*.hpp" > cscope.files
+
+Now, pass the list of source files to Cscope, which will build a reference database:
+------------------------------------------------------------------------------------
+cscope -q -R -b -i cscope.files
+
+start the Cscope browser
+------------------------
+cscope -d
+
+ctags:
+------
+ctags -R .
+
+
+
+
